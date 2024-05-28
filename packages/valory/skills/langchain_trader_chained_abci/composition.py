@@ -52,7 +52,7 @@ abci_app_transition_mapping: AbciAppTransitionMapping = {
     MechFinalStates.FinishedMechResponseTimeoutRound: MechResponseStates.MechResponseRound,
     LangchainTraderAbci.FinishedPostTxDecisionMakingMechRound: MechResponseStates.MechResponseRound,
     ResetAndPauseAbci.FinishedResetAndPauseRound: LangchainTraderAbci.DecisionMakingRound,
-    ResetAndPauseAbci.FinishedResetAndPauseErrorRound: ResetAndPauseAbci.ResetAndPauseRound,
+    ResetAndPauseAbci.FinishedResetAndPauseErrorRound: RegistrationAbci.RegistrationRound,
 }
 
 termination_config = BackgroundAppConfig(
