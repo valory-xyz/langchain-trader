@@ -216,7 +216,23 @@ class DecisionMakingBehaviour(LangchainTraderBaseBehaviour):
             return None
 
         try:
-            call_data = json.loads(encoded_response)
+            # Decision making
+            response = json.loads(encoded_response)
+
+            self.context.logger.info(f"Mech response: {response}")
+
+            if (
+                response["result"]["p_yes"] < 0.6
+                or response["result"]["confidence"] < 0.6
+            ):
+                self.context.logger.info(
+                    f"Response was 'NO' or there is not enough confidence on the 'YES' response"
+                )
+                return None
+
+            # Transfer 1 wei to the agent
+            call_data = {VALUE_KEY: 1, TO_ADDRESS_KEY: self.context.agent_address}
+
         except json.decoder.JSONDecodeError:
             self.context.logger.error(
                 f"Could not decode the mech's {encoded_response=}."
