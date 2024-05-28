@@ -222,8 +222,8 @@ class DecisionMakingBehaviour(LangchainTraderBaseBehaviour):
             self.context.logger.info(f"Mech response: {response}")
 
             if (
-                response["result"]["p_yes"] < 0.6
-                or response["result"]["confidence"] < 0.6
+                response["p_yes"] < 0.6
+                or response["confidence"] < 0.6
             ):
                 self.context.logger.info(
                     f"Response was 'NO' or there is not enough confidence on the 'YES' response"
