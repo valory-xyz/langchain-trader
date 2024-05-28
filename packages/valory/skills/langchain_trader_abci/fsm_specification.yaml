@@ -1,0 +1,34 @@
+alphabet_in:
+- DECISION_MAKING
+- DONE
+- MECH
+- NO_MAJORITY
+- ROUND_TIMEOUT
+- SETTLE
+default_start_state: DecisionMakingRound
+final_states:
+- FinishedDecisionMakingMechRound
+- FinishedDecisionMakingResetRound
+- FinishedDecisionMakingSettleRound
+- FinishedPostTxDecisionMakingMechRound
+label: LangchainTraderAbciApp
+start_states:
+- DecisionMakingRound
+- PostTxDecisionMakingRound
+states:
+- DecisionMakingRound
+- FinishedDecisionMakingMechRound
+- FinishedDecisionMakingResetRound
+- FinishedDecisionMakingSettleRound
+- FinishedPostTxDecisionMakingMechRound
+- PostTxDecisionMakingRound
+transition_func:
+    (DecisionMakingRound, DONE): FinishedDecisionMakingResetRound
+    (DecisionMakingRound, MECH): FinishedDecisionMakingMechRound
+    (DecisionMakingRound, NO_MAJORITY): DecisionMakingRound
+    (DecisionMakingRound, ROUND_TIMEOUT): DecisionMakingRound
+    (DecisionMakingRound, SETTLE): FinishedDecisionMakingSettleRound
+    (PostTxDecisionMakingRound, DECISION_MAKING): DecisionMakingRound
+    (PostTxDecisionMakingRound, MECH): FinishedPostTxDecisionMakingMechRound
+    (PostTxDecisionMakingRound, NO_MAJORITY): PostTxDecisionMakingRound
+    (PostTxDecisionMakingRound, ROUND_TIMEOUT): PostTxDecisionMakingRound
