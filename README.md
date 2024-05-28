@@ -92,10 +92,10 @@ docker container run -it valory/open-autonomy-user:latest
     docker logs -f langchaintrader_abci_0
     ```
 
-6. Make a transfer request, for example to a specific address (use your own destination address):
+6. Make a request:
 
     ```
-    curl -X POST http://localhost:8000/request -H "Content-Type: application/json" -d '{"prompt":"Transfer 1 wei to 0x8D7102ce2d35a409535285252599c149FBeABB73"}'
+    curl -X POST http://localhost:8000/request -H "Content-Type: application/json" -d '{"prompt":"Will Apple unveil a new Iphone before the end of 2024?"}'
     ```
 
 

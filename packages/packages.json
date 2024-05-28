@@ -1,9 +1,9 @@
 {
     "dev": {
-        "skill/valory/langchain_trader_abci/0.1.0": "bafybeihjkbn4wbsu42j2janplceimo22km6em5md7byprvr7aiiye4gsjy",
-        "skill/valory/langchain_trader_chained_abci/0.1.0": "bafybeie5psiiht4kztpfpbh5d2yqloeh45xggdaffm22rqtk4ohlju4mkq",
-        "agent/valory/langchain_trader/0.1.0": "bafybeihtwukiuruj5w3yzb3nhdnhnvok57rs7fobdp433w2fbjizl2regi",
-        "service/valory/langchain_trader/0.1.0": "bafybeibnqclr7jbrmt6gjror347ed63ypbh6wh52n6bnqp7ca6rt2gt5hm"
+        "skill/valory/langchain_trader_abci/0.1.0": "bafybeiefzu7h6zmb7tkuiyp6o4ku55k7ybr34ween3vitjxiamskvnzwva",
+        "skill/valory/langchain_trader_chained_abci/0.1.0": "bafybeic2limkg5as7nmwxcyrsmnbyyv6beeigj4e72kk4xhcr2dsywttf4",
+        "agent/valory/langchain_trader/0.1.0": "bafybeienlkysasoscevimi6cdoqfjnq3i56gxbjoskxpfzdnhv67uact4y",
+        "service/valory/langchain_trader/0.1.0": "bafybeigymlfzyw7slvyee7vwstshfsfs6uo3us33wial4xfqlkosc3aile"
     },
     "third_party": {
         "protocol/open_aea/signing/1.0.0": "bafybeihv62fim3wl2bayavfcg3u5e5cxu3b7brtu4cn5xoxd6lqwachasi",

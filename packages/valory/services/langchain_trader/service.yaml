@@ -7,7 +7,7 @@ license: Apache-2.0
 fingerprint:
   README.md: bafybeiha2vk63l4diopb2yvdsp25cb5x4eawgkuvuejp7xslr25szdus3a
 fingerprint_ignore_patterns: []
-agent: valory/langchain_trader:0.1.0:bafybeihtwukiuruj5w3yzb3nhdnhnvok57rs7fobdp433w2fbjizl2regi
+agent: valory/langchain_trader:0.1.0:bafybeienlkysasoscevimi6cdoqfjnq3i56gxbjoskxpfzdnhv67uact4y
 number_of_agents: 1
 deployment:
   agent:
@@ -102,7 +102,7 @@ extra:
         wveolas_address: ${WVEOLAS_ADDRESS:str:0x4039B809E0C0Ad04F6Fc880193366b251dDf4B40}
         tweet_consensus_wveolas: ${TWEET_CONSENSUS_WVEOLAS:int:2000000}
         termination_from_block: ${TERMINATION_FROM_BLOCK:int:0}
-        tool: ${TOOL:str:prepare_tx}
+        tool: ${TOOL:str:prediction_langchain}
         mech_chain_id: ${MECH_CHAIN_ID:str:gnosis}
         max_transfer_value_wei: ${MAX_TRANSFER_VALUE_WEI:int:1000000000000000000}
 ---

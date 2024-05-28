@@ -38,9 +38,9 @@ from packages.valory.skills.langchain_trader_abci.payloads import (
     PostTxDecisionMakingPayload,
 )
 from packages.valory.skills.langchain_trader_abci.rounds import (
-    LangchainTraderAbciApp,
     DecisionMakingRound,
     Event,
+    LangchainTraderAbciApp,
     PostTxDecisionMakingRound,
     SynchronizedData,
 )

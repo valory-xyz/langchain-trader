@@ -32,8 +32,8 @@ protocols:
 skills:
 - valory/abstract_abci:0.1.0:bafybeiedikuvfpdx7xhyrxcpp6ywi2d6qf6uqvlwmhgcal7qhw5duicvym
 - valory/abstract_round_abci:0.1.0:bafybeia7msuvsouwcky263k6lup5hwcj73pka4pepkgyii6sya2wfawqvy
-- valory/langchain_trader_abci:0.1.0:bafybeihjkbn4wbsu42j2janplceimo22km6em5md7byprvr7aiiye4gsjy
-- valory/langchain_trader_chained_abci:0.1.0:bafybeie5psiiht4kztpfpbh5d2yqloeh45xggdaffm22rqtk4ohlju4mkq
+- valory/langchain_trader_abci:0.1.0:bafybeiefzu7h6zmb7tkuiyp6o4ku55k7ybr34ween3vitjxiamskvnzwva
+- valory/langchain_trader_chained_abci:0.1.0:bafybeic2limkg5as7nmwxcyrsmnbyyv6beeigj4e72kk4xhcr2dsywttf4
 - valory/mech_interact_abci:0.1.0:bafybeiecxnzn6mibwkht7vtv6uoa7bpd3wqhtyzd7o3jjvwxpukddon3le
 - valory/registration_abci:0.1.0:bafybeihwkqc6klqrk247esh4cumfphosx3yadullxhmrrkovzg2rward5y
 - valory/reset_pause_abci:0.1.0:bafybeibd5divbbng3klkxlkzfwmwdc7imobcymfx57lf3owbyf7we7xdem
@@ -181,7 +181,7 @@ models:
       mech_contract_address: ${str:0x230eD015735c0D01EA0AaD2786Ed6Bd3C6e75912}
       ipfs_address: ${str:https://gateway.autonolas.tech/ipfs/}
       service_endpoint_base: ${str:https://langchain_trader.staging.autonolas.tech/}
-      tool: ${str:prepare_tx}
+      tool: ${str:prediction_langchain}
       mech_chain_id: ${str:gnosis}
       max_transfer_value_wei: ${int:1000000000000000000}
 ---

@@ -25,7 +25,9 @@ from packages.valory.skills.abstract_round_abci.behaviours import (
     AbstractRoundBehaviour,
     BaseBehaviour,
 )
-from packages.valory.skills.langchain_trader_abci.behaviours import LangchainTraderRoundBehaviour
+from packages.valory.skills.langchain_trader_abci.behaviours import (
+    LangchainTraderRoundBehaviour,
+)
 from packages.valory.skills.langchain_trader_chained_abci.composition import (
     LangchainTraderChainedSkillAbciApp,
 )
