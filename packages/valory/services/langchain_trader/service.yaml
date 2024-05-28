@@ -5,9 +5,9 @@ description: A service that trades on Gnosis.
 aea_version: '>=1.0.0, <2.0.0'
 license: Apache-2.0
 fingerprint:
-  README.md: bafybeibpx5bbmxyqhpxrm7l722ejprgv2xvmli65xvkstbonexlr5n3reu
+  README.md: bafybeiha2vk63l4diopb2yvdsp25cb5x4eawgkuvuejp7xslr25szdus3a
 fingerprint_ignore_patterns: []
-agent: valory/langchain_trader:0.1.0:bafybeih5n6tizhghko3ubovl5m5jf354qypgbp2i2himwqqniylesmn4hy
+agent: valory/langchain_trader:0.1.0:bafybeihtwukiuruj5w3yzb3nhdnhnvok57rs7fobdp433w2fbjizl2regi
 number_of_agents: 1
 deployment:
   agent:

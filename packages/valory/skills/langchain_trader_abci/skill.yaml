@@ -6,14 +6,14 @@ description: A skill to trade on Gnosis.
 license: Apache-2.0
 aea_version: '>=1.0.0, <2.0.0'
 fingerprint:
-  __init__.py: bafybeibpav2gjxb5zexmnc4roj3n52u3ua2nuusqhrctergnztbfcbpk7y
-  behaviours.py: bafybeibrdbcaw44qoplgynr6tz2dshda4afr7556lolsglhyo64vvvwrvu
-  dialogues.py: bafybeif2gaejo5wyypbkstz5pgfhkutaazabubix6zraqp3oi3677a5ocq
-  fsm_specification.yaml: bafybeibuved2gcvkmdb72gthyiruey7mtbc2bcnxdyhhhw4ofw7u5tgyuy
-  handlers.py: bafybeia7iem37ac3lvegx5g3ygcvsk6oblaolcadbodntsdu3tntwvwj54
-  models.py: bafybeih4gjvzzz5olgz4hxq6znrhgkylx662hkwpmengmihohqo25qmfcm
-  payloads.py: bafybeihqvfqhkxhcptgwaezvmyyza32wfgiqpirztr75wywttqr577kw6a
-  rounds.py: bafybeiecbrno4redc22fcjhl7xj5qqgfjvgi7pcyzhlgfxutrakc4gt7dq
+  __init__.py: bafybeibftvxgsymvvfsxyhd7esdwqqteasn24f7cblq24g7pjcikoxihma
+  behaviours.py: bafybeiatkbpoyz3pyjs4sch75osgw6g6m5ebxqb4qktislxrpgssjwq3ei
+  dialogues.py: bafybeifmonrun3cfb367yrrfs4q5zlbszjetxikmp4dzswwbsc7ykqla3e
+  fsm_specification.yaml: bafybeifkixnjqdvs3wlkqzsjcv4oavdzma6wiuezssy7tmfdm7h4xlczpi
+  handlers.py: bafybeiffyalndf74lpvsvexjuvaxj7hvgdxvwkcsj3vzjan4uxs7uevrdi
+  models.py: bafybeiceqrq44enkifkinryi7a7gzucrisa7fl7yjs2umurzodxjyreeiy
+  payloads.py: bafybeicisenpcqd33irqkm5ljt7xrgxlo5lbesi2dmie5qmssa7umg64um
+  rounds.py: bafybeihfvenkv4f3p56hohvhx7coqj2sjo6ncojrsznuhfewbsfp3qd5kq
 fingerprint_ignore_patterns: []
 connections:
 - valory/http_server:0.22.0:bafybeihpgu56ovmq4npazdbh6y6ru5i7zuv6wvdglpxavsckyih56smu7m

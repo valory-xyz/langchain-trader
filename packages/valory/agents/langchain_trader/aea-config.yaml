@@ -5,7 +5,7 @@ license: Apache-2.0
 description: An agent that trades on Gnosis.
 aea_version: '>=1.19.0, <2.0.0'
 fingerprint:
-  __init__.py: bafybeiax7uzltout7552wnctin5dz5o7qtxchvsqsz7wxme6yhug7wj3de
+  __init__.py: bafybeiaygdtmzq5ezba7askbqxiygn2riesiezffuisafuyfdduokodesq
 fingerprint_ignore_patterns: []
 connections:
 - valory/abci:0.1.0:bafybeihhtx7t5fsxaoajzq5nm4hrq57smigx7gqv35bss766txaaffjmsa
@@ -32,8 +32,8 @@ protocols:
 skills:
 - valory/abstract_abci:0.1.0:bafybeiedikuvfpdx7xhyrxcpp6ywi2d6qf6uqvlwmhgcal7qhw5duicvym
 - valory/abstract_round_abci:0.1.0:bafybeia7msuvsouwcky263k6lup5hwcj73pka4pepkgyii6sya2wfawqvy
-- valory/langchain_trader_abci:0.1.0:bafybeihehruo3wwprbcjijkaygyovza7fr4aa3kqu5gij2vvjeor6x37oi
-- valory/langchain_trader_chained_abci:0.1.0:bafybeieex6m24cch4tiiqukhxxkcoi3aj54k5dkqunt3ftahknjlninl7q
+- valory/langchain_trader_abci:0.1.0:bafybeihjkbn4wbsu42j2janplceimo22km6em5md7byprvr7aiiye4gsjy
+- valory/langchain_trader_chained_abci:0.1.0:bafybeie5psiiht4kztpfpbh5d2yqloeh45xggdaffm22rqtk4ohlju4mkq
 - valory/mech_interact_abci:0.1.0:bafybeiecxnzn6mibwkht7vtv6uoa7bpd3wqhtyzd7o3jjvwxpukddon3le
 - valory/registration_abci:0.1.0:bafybeihwkqc6klqrk247esh4cumfphosx3yadullxhmrrkovzg2rward5y
 - valory/reset_pause_abci:0.1.0:bafybeibd5divbbng3klkxlkzfwmwdc7imobcymfx57lf3owbyf7we7xdem
