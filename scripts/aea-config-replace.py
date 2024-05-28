@@ -31,7 +31,9 @@ def main() -> None:
     """Main"""
     load_dotenv()
 
-    with open(Path("langchain_trader", "aea-config.yaml"), "r", encoding="utf-8") as file:
+    with open(
+        Path("langchain_trader", "aea-config.yaml"), "r", encoding="utf-8"
+    ) as file:
         config = list(yaml.safe_load_all(file))
 
         config[2]["config"]["ledger_apis"]["ethereum"][
@@ -46,8 +48,9 @@ def main() -> None:
             "safe_contract_address"
         ] = f"${{str:{os.getenv('SAFE_CONTRACT_ADDRESS')}}}"
 
-
-    with open(Path("langchain_trader", "aea-config.yaml"), "w", encoding="utf-8") as file:
+    with open(
+        Path("langchain_trader", "aea-config.yaml"), "w", encoding="utf-8"
+    ) as file:
         yaml.dump_all(config, file, sort_keys=False)
 
 
