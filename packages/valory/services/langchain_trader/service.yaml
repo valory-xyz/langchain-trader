@@ -7,7 +7,7 @@ license: Apache-2.0
 fingerprint:
   README.md: bafybeiha2vk63l4diopb2yvdsp25cb5x4eawgkuvuejp7xslr25szdus3a
 fingerprint_ignore_patterns: []
-agent: valory/langchain_trader:0.1.0:bafybeibgc7u5ff47g3muqi27jyev4q7znfmtjuuppzt3nu4eu5pjfypady
+agent: valory/langchain_trader:0.1.0:bafybeiai3wo6m6e5mxep6ilhoe5wyybtstiqgqkgh5chrkv7eqvhf5w7xi
 number_of_agents: 1
 deployment:
   agent:
@@ -95,7 +95,7 @@ extra:
         openai_calls_allowed_in_window: ${OPENAI_CALLS_ALLOWED_IN_WINDOW:int:100}
         service_endpoint_base: ${SERVICE_ENDPOINT_BASE:str:https://langchain_trader.autonolas.tech/}
         multisend_batch_size: ${MULTISEND_BATCH_SIZE:int:5}
-        mech_contract_address: ${MECH_CONTRACT_ADDRESS:str:0x230eD015735c0D01EA0AaD2786Ed6Bd3C6e75912}
+        mech_contract_address: ${MECH_CONTRACT_ADDRESS:str:0x77af31De935740567Cf4fF1986D04B2c964A786a}
         ipfs_address: ${IPFS_ADDRESS:str:https://gateway.autonolas.tech/ipfs/}
         default_chain_id: ${DEFAULT_CHAIN_ID:str:gnosis}
         transaction_service_url: ${TRANSACTION_SERVICE_URL:str:https://safe-transaction-mainnet.safe.global/api/v1/messages/{message_hash}/}

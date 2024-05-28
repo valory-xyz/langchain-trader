@@ -33,7 +33,7 @@ skills:
 - valory/abstract_abci:0.1.0:bafybeiedikuvfpdx7xhyrxcpp6ywi2d6qf6uqvlwmhgcal7qhw5duicvym
 - valory/abstract_round_abci:0.1.0:bafybeia7msuvsouwcky263k6lup5hwcj73pka4pepkgyii6sya2wfawqvy
 - valory/langchain_trader_abci:0.1.0:bafybeicmzmfua4qyrumvi7apzrotafut5mhblwfagp5pq3uchsapbqisby
-- valory/langchain_trader_chained_abci:0.1.0:bafybeica47cl562q42u4vowtbd7ny2dl23geqjhbwc6kqnlewl6boek35a
+- valory/langchain_trader_chained_abci:0.1.0:bafybeiberwly7z3sbzxdukgq4rk2mwenr3ttvuaiufmr4jjnq3nlnpnylu
 - valory/mech_interact_abci:0.1.0:bafybeiecxnzn6mibwkht7vtv6uoa7bpd3wqhtyzd7o3jjvwxpukddon3le
 - valory/registration_abci:0.1.0:bafybeihwkqc6klqrk247esh4cumfphosx3yadullxhmrrkovzg2rward5y
 - valory/reset_pause_abci:0.1.0:bafybeibd5divbbng3klkxlkzfwmwdc7imobcymfx57lf3owbyf7we7xdem
@@ -93,7 +93,7 @@ config:
     gnosis:
       address: ${str:http://localhost:8545}
       chain_id: ${int:42220}
-      poa_chain: ${bool:true}
+      poa_chain: ${bool:false}
       default_gas_price_strategy: ${str:eip1559}
 ---
 public_id: valory/p2p_libp2p_client:0.1.0
@@ -146,9 +146,9 @@ models:
       termination_sleep: ${int:900}
       init_fallback_gas: 0
       keeper_allowed_retries: 3
-      reset_pause_duration: ${int:30}
+      reset_pause_duration: ${int:10}
       on_chain_service_id: ${int:null}
-      reset_tendermint_after: ${int:2}
+      reset_tendermint_after: ${int:10}
       retry_attempts: 400
       retry_timeout: 3
       request_retry_delay: 1.0
@@ -157,7 +157,7 @@ models:
       service_id: langchain_trader
       service_registry_address: ${str:null}
       setup:
-        all_participants: ${list:["0x65E50F3B0D6AC6b0C45067ECf0a0f14C1F283d0b"]}
+        all_participants: ${list:["0x8D7102ce2d35a409535285252599c149FBeABB73"]}
         safe_contract_address: ${str:0x0000000000000000000000000000000000000000}
         consensus_threshold: ${int:null}
       share_tm_config_on_startup: ${bool:false}
@@ -178,10 +178,10 @@ models:
       light_slash_unit_amount: ${int:5000000000000000}
       serious_slash_unit_amount: ${int:8000000000000000}
       multisend_batch_size: ${int:50}
-      mech_contract_address: ${str:0x230eD015735c0D01EA0AaD2786Ed6Bd3C6e75912}
+      mech_contract_address: ${str:0x77af31De935740567Cf4fF1986D04B2c964A786a}
       ipfs_address: ${str:https://gateway.autonolas.tech/ipfs/}
       service_endpoint_base: ${str:https://langchain_trader.staging.autonolas.tech/}
-      tool: ${str:prediction_langchain}
+      tool: ${str:prediction-online-sme}
       mech_chain_id: ${str:gnosis}
       max_transfer_value_wei: ${int:1000000000000000000}
 ---
