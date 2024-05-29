@@ -32,8 +32,8 @@ protocols:
 skills:
 - valory/abstract_abci:0.1.0:bafybeiedikuvfpdx7xhyrxcpp6ywi2d6qf6uqvlwmhgcal7qhw5duicvym
 - valory/abstract_round_abci:0.1.0:bafybeia7msuvsouwcky263k6lup5hwcj73pka4pepkgyii6sya2wfawqvy
-- valory/langchain_trader_abci:0.1.0:bafybeigaad5ajtqruqahay35ba7ssquesczxd4vj5uhnxtjvlodzcbn6ae
-- valory/langchain_trader_chained_abci:0.1.0:bafybeia3ibrefa2c7mr4x3wnvfiuvncatqqyqsfqahjg3ooyp5gem3rhke
+- valory/langchain_trader_abci:0.1.0:bafybeidsvg3nbplompp2h3r6fowdyhx7qik6ktfdhxcj4pewkgcix2aruq
+- valory/langchain_trader_chained_abci:0.1.0:bafybeia2dgqnxujrop6zc3h23js3mj4tqzidkjmc4hlvoufsf45tl3z6bq
 - valory/mech_interact_abci:0.1.0:bafybeiecxnzn6mibwkht7vtv6uoa7bpd3wqhtyzd7o3jjvwxpukddon3le
 - valory/registration_abci:0.1.0:bafybeihwkqc6klqrk247esh4cumfphosx3yadullxhmrrkovzg2rward5y
 - valory/reset_pause_abci:0.1.0:bafybeibd5divbbng3klkxlkzfwmwdc7imobcymfx57lf3owbyf7we7xdem
@@ -95,6 +95,11 @@ config:
       chain_id: ${int:42220}
       poa_chain: ${bool:false}
       default_gas_price_strategy: ${str:eip1559}
+    celo:
+      address: ${str:http://host.docker.internal:8545}
+      chain_id: ${int:42220}
+      poa_chain: ${bool:true}
+      default_gas_price_strategy: ${CELO_LEDGER_PRICING:str:eip1559}
 ---
 public_id: valory/p2p_libp2p_client:0.1.0
 type: connection
