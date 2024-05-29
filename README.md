@@ -1,18 +1,20 @@
 # Langchain trader
 
-An [Olas](https://olas.network/) agent that makes transactions on the Gnosis chain.
+An [Olas](https://olas.network/) agent that uses langchain to make predictions on future outcomes.
 
 ## System requirements
 
+To run the agent:
 - Python `>=3.10`
-- [Tendermint](https://docs.tendermint.com/v0.34/introduction/install.html) `==0.34.19`
-- [IPFS node](https://docs.ipfs.io/install/command-line/#official-distributions) `==0.6.0`
 - [Pip](https://pip.pypa.io/en/stable/installation/)
 - [Poetry](https://python-poetry.org/)
 - [Docker Engine](https://docs.docker.com/engine/install/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [Set Docker permissions so you can run containers as non-root user](https://docs.docker.com/engine/install/linux-postinstall/)
 
+To develop the agent:
+- [Tendermint](https://docs.tendermint.com/v0.34/introduction/install.html) `==0.34.19`
+- [IPFS node](https://docs.ipfs.io/install/command-line/#official-distributions) `==0.6.0`
 
 ## Run you own agent
 
@@ -51,9 +53,9 @@ An [Olas](https://olas.network/) agent that makes transactions on the Gnosis cha
     ]
     ```
 
-2. Deploy a [Safe on Gnosis](https://app.safe.global/welcome) and set your agent address as one of the signers.
+2. Deploy a [Safe on Celo](https://app.safe.global/welcome) and set your agent address as one of the signers.
 
-3. Fund both your agent and Safe with a small amount of xDAI, i.e. $0.05 each.
+3. Fund both your agent and Safe with a small amount of CELO, i.e. $0.05 each.
 
 
 ### Run the service
@@ -64,7 +66,7 @@ An [Olas](https://olas.network/) agent that makes transactions on the Gnosis cha
     cp sample.env .env
     ```
 
-2. Fill in the required environment variables in .env. You'll need a Ethereum RPC even if the service runs on Gnosis. These variables are: `ALL_PARTICIPANTS`, `ETHEREUM_LEDGER_RPC`, `GNOSIS_LEDGER_RPC` and `SAFE_CONTRACT_ADDRESS`.
+2. Fill in the required environment variables in .env. You'll need a Ethereum RPC even if the service runs on CELO. These variables are: `ALL_PARTICIPANTS`, `ETHEREUM_LEDGER_RPC`, `CELO_LEDGER_RPC` and `SAFE_CONTRACT_ADDRESS`.
 
 3. Check that Docker is running:
 
@@ -78,14 +80,15 @@ An [Olas](https://olas.network/) agent that makes transactions on the Gnosis cha
     bash run_service.sh
     ```
 
-5. Look at the service logs (on another terminal):
+4. Make a request (on another terminal):
+
+    ```
+    curl -X POST http://localhost:8000/request -H "Content-Type: application/json" -d '{"prompt":"Will Apple unveil a new Iphone before the end of 2024?"}'
+    ```
+    
+6. Look at the service logs to read the response (on a third terminal):
 
     ```
     docker logs -f langchaintrader_abci_0
     ```
 
-6. Make a request:
-
-    ```
-    curl -X POST http://localhost:8000/request -H "Content-Type: application/json" -d '{"prompt":"Will Apple unveil a new Iphone before the end of 2024?"}'
-    ```
